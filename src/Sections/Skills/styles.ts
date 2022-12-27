@@ -2,13 +2,9 @@ import { styled } from "../../../stitches.config";
 
 export const Container = styled("div", {
   padding: "$md $huge",
-  display: "flex",
-  flexDirection: "column",
-  alignItems: "start",
-  justifyContent: "center",
-  margin: '0 auto',
+  background: '$bg_primary',
 
-  "> h2": {
+  ".skills__title": {
     color: "$primary",
   },
 });
@@ -19,12 +15,12 @@ export const SkillsContainer = styled("div", {
   alignItems: "center",
   justifyContent: "space-around",
   flexWrap: "wrap",
-  marginLeft: '$nano'
+  marginLeft: "$nano",
 });
 
 export const SkillBox = styled("div", {
-  width: "280px",
-  height: "200px",
+  width: "200px",
+  height: "150px",
   border: "2px solid $bg_transparent",
   borderRadius: "$sm",
   display: "flex",

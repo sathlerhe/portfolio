@@ -1,4 +1,5 @@
 import React from "react";
+import { Col, Container as GridContainer, Row } from "react-grid-system";
 
 import { Container, SkillsContainer, SkillBox } from "./styles";
 
@@ -44,11 +45,11 @@ const Skills: React.FC = () => {
       name: "Vite",
       src: "/assets/vite.png",
       id: "07",
-    },  
+    },
   ];
 
   interface IHandleToggleSkillName {
-    id: string;
+    id: String;
   }
   const handleToggleSkillName = (id: IHandleToggleSkillName) => {
     const skillName = document.querySelector(`#skillId${id}`);
@@ -57,21 +58,27 @@ const Skills: React.FC = () => {
 
   return (
     <Container id="skills">
-      <h2>Habilidades</h2>
-      <SkillsContainer>
-        {skills?.map((skill) => (
-          <SkillBox
-            key={skill?.id}
-            onMouseEnter={() => handleToggleSkillName(skill?.id)}
-            onMouseLeave={() => handleToggleSkillName(skill?.id)}
-          >
-            <img src={skill?.src} alt={skill?.name} />
-            <p id={`skillId${skill?.id}`} className="hidden">
-              {skill?.name}
-            </p>
-          </SkillBox>
-        ))}
-      </SkillsContainer>
+      <GridContainer>
+        <Row>
+          <Col>
+            <h2 className="skills__title">Habilidades</h2>
+            <SkillsContainer>
+              {skills?.map((skill) => (
+                <SkillBox
+                  key={skill?.id}
+                  onMouseEnter={() => handleToggleSkillName(skill?.id)}
+                  onMouseLeave={() => handleToggleSkillName(skill?.id)}
+                >
+                  <img src={skill?.src} alt={skill?.name} />
+                  <p id={`skillId${skill?.id}`} className="hidden">
+                    {skill?.name}
+                  </p>
+                </SkillBox>
+              ))}
+            </SkillsContainer>
+          </Col>
+        </Row>
+      </GridContainer>
     </Container>
   );
 };

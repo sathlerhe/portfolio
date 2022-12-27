@@ -1,11 +1,14 @@
 import { styled } from "../../../stitches.config";
 
 export const Container = styled("div", {
+  padding: "$huge",
+  borderBottom: "1px solid $primary",
+});
+
+export const Flex = styled("div", {
   display: "flex",
   alignItems: "center",
-  justifyContent: "space-around",
-  padding: "$huge",
-  borderBottom: '1px solid $primary'
+  justifyContent: "space-between",
 });
 
 export const TextContainer = styled("div", {

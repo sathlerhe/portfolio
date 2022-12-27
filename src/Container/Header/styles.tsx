@@ -3,11 +3,15 @@ import { styled } from "../../../stitches.config";
 export const Container = styled("header", {
   background: "$bg_primary",
   borderBottom: "1px solid $primary",
+  position: "fixed",
+  width: "100%",
+  zIndex: 3,
+});
+
+export const Flex = styled("header", {
   display: "flex",
   alignItems: "center",
-  justifyContent: "space-around",
-  position: 'fixed',
-  width: '100%',
+  justifyContent: "space-between",
 });
 
 export const Title = styled("h4", {
@@ -17,8 +21,7 @@ export const Title = styled("h4", {
 
   color: "$text_white",
   fontSize: "$header_6",
-  fontWeight: '$header_5',
-
+  fontWeight: "$header_5",
 
   "> i": {
     color: "$primary",
@@ -41,7 +44,7 @@ export const Menu = styled("nav", {
     padding: "$nano",
     transition: "0.4s ease",
     fontSize: "18px",
-    fontWeight: '$light',
+    fontWeight: "$light",
 
     "&:hover": {
       background: "$bg_transparent",

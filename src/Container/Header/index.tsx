@@ -1,4 +1,6 @@
-import { Container, Title, Menu } from "./styles";
+import { Col, Container as GridContainer, Row } from "react-grid-system";
+
+import { Container, Title, Menu, Flex } from "./styles";
 
 const Header: React.FC = () => {
   const links = [
@@ -22,17 +24,27 @@ const Header: React.FC = () => {
 
   return (
     <Container>
-      <Title>
-        <i>{"<"}</i>
-        HenriqueSathler
-        <i>{"/>"}</i>
-      </Title>
+      <GridContainer>
+        <Row>
+          <Col>
+            <Flex>
+              <Title>
+                <i>{"<"}</i>
+                HenriqueSathler
+                <i>{"/>"}</i>
+              </Title>
 
-      <Menu>
-        {links?.map((link) => (
-          <a key={link?.text} href={link?.link}>{link?.text}</a>
-        ))}
-      </Menu>
+              <Menu>
+                {links?.map((link) => (
+                  <a key={link?.text} href={link?.link}>
+                    {link?.text}
+                  </a>
+                ))}
+              </Menu>
+            </Flex>
+          </Col>
+        </Row>
+      </GridContainer>
     </Container>
   );
 };
