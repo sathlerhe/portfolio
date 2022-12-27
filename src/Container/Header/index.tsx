@@ -30,7 +30,7 @@ const Header: React.FC = () => {
 
       <Menu>
         {links?.map((link) => (
-          <a href={link?.link}>{link?.text}</a>
+          <a key={link?.text} href={link?.link}>{link?.text}</a>
         ))}
       </Menu>
     </Container>

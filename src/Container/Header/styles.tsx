@@ -3,10 +3,11 @@ import { styled } from "../../../stitches.config";
 export const Container = styled("header", {
   background: "$bg_primary",
   borderBottom: "1px solid $primary",
-  padding: "$nano",
   display: "flex",
   alignItems: "center",
   justifyContent: "space-around",
+  position: 'fixed',
+  width: '100%',
 });
 
 export const Title = styled("h4", {
