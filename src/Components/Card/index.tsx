@@ -32,7 +32,7 @@ const Card: React.FC = () => {
         <TextExp>
           <h6>Experiências Recentes</h6>
           {recentExp?.map((exp) => (
-            <Experience>
+            <Experience key={exp?.name}>
               <Img src={exp?.src} alt={exp?.name} />
               <TextInformations>
                 <h5>{exp?.name}</h5>

@@ -40,7 +40,7 @@ const Contact: React.FC = () => {
 
             <SMContainer>
               {socialMedias?.map((sm) => (
-                <SMBox href={sm?.link} target="_blank">
+                <SMBox href={sm?.link} target="_blank" key={sm?.name}>
                   <Img src={sm?.icon} alt={sm?.name} />
                 </SMBox>
               ))}

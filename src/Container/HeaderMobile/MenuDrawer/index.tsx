@@ -32,7 +32,6 @@ const MenuDrawer: React.FC<IMenuDrawer> = ({ isOpen, setIsOpen, ...props }) => {
   return (
     <Container
       {...props}
-      setIsOpen={setIsOpen}
       ariaHideApp={false}
       onRequestClose={() => setIsOpen(false)}
       shouldCloseOnOverlayClick
