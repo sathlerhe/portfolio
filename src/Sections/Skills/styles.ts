@@ -1,12 +1,16 @@
 import { styled } from "../../../stitches.config";
 
 export const Container = styled("div", {
-  padding: "$md $huge",
+  padding: "$xxxl $huge",
   background: '$bg_primary',
 
   ".skills__title": {
     color: "$primary",
   },
+
+  '@sm': {
+    padding: '$xl 0',
+  }
 });
 
 export const SkillsContainer = styled("div", {
@@ -16,6 +20,7 @@ export const SkillsContainer = styled("div", {
   justifyContent: "space-around",
   flexWrap: "wrap",
   marginLeft: "$nano",
+
 });
 
 export const SkillBox = styled("div", {
@@ -35,6 +40,7 @@ export const SkillBox = styled("div", {
     position: "absolute",
     color: "$text_white",
     fontSize: "$header_3",
+    userSelect: 'none',
   },
 
   "> p.hidden": {

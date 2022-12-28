@@ -1,38 +1,17 @@
 import { Col, Container as GridContainer, Row } from "react-grid-system";
+import Logo from "../../Components/Logo";
+import { links } from "../../utils/headerLinks";
 
-import { Container, Title, Menu, Flex } from "./styles";
+import { Container, Menu, Flex } from "./styles";
 
 const Header: React.FC = () => {
-  const links = [
-    {
-      text: "Início",
-      link: "#",
-    },
-    {
-      text: "Habilidades",
-      link: "#skills",
-    },
-    {
-      text: "Projetos",
-      link: "#projects",
-    },
-    {
-      text: "Contato",
-      link: "#contact",
-    },
-  ];
-
   return (
     <Container>
       <GridContainer>
         <Row>
           <Col>
             <Flex>
-              <Title>
-                <i>{"<"}</i>
-                HenriqueSathler
-                <i>{"/>"}</i>
-              </Title>
+              <Logo />
 
               <Menu>
                 {links?.map((link) => (

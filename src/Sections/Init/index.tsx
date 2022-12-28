@@ -27,6 +27,7 @@ const Init: React.FC = () => {
                   <Button
                     color="primary"
                     href="https://www.linkedin.com/in/henrique-sathler"
+                    target="_blank"
                   >
                     LinkedIn
                   </Button>

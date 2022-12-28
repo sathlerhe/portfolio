@@ -3,9 +3,11 @@ const container_xl = "1440px";
 const container_lg = "1140px";
 const container_md = "960px";
 const container_sm = "540px";
-const container_xs = "360px";
+const container_xs = "380px"; 
+const container_xxs = "360px";
 
 export const media = {
+  nano: `screen and (max-width: ${container_xxs})`,
   xxs: `screen and (max-width: ${container_xs})`,
   xs: `screen and (max-width: ${container_sm})`,
   sm: `screen and (max-width: ${container_md})`,
@@ -17,7 +19,7 @@ export const media = {
 export const defaultTheme = {
   theme: {
     colors: {
-      bg_primary: '#161616',
+      bg_primary: '#171717',
       bg_secondary: '#000000',
 
       primary: '#00a82c',
@@ -26,7 +28,8 @@ export const defaultTheme = {
 
       border_gray: '#c2c2c2',
 
-      bg_transparent: 'rgba(255, 255, 255, 0.15)'
+      bg_transparent: 'rgba(255, 255, 255, 0.15)',
+      bg_transparent_2: 'rgba(0, 0, 0, 0.15)',
     },
     space: {
       quarck: "4px",

@@ -1,7 +1,7 @@
 import { styled } from "../../../stitches.config";
 
 export const Container = styled("a", {
-  textDecoration: 'none',
+  textDecoration: "none",
   display: "flex",
   alignItems: "center",
   justifyContent: "center",
@@ -15,6 +15,12 @@ export const Container = styled("a", {
 
   "&:hover": {
     opacity: "0.7",
+  },
+
+  "@xs": {
+    width: "100px",
+    height: "30px",
+    textAlign: "center",
   },
 
   variants: {
@@ -37,6 +43,6 @@ export const Container = styled("a", {
   },
 
   defaultVariants: {
-    color: 'primary'
-  }
+    color: "primary",
+  },
 });

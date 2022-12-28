@@ -18,6 +18,18 @@ export const Container = styled("div", {
     textAlign: "justify",
     fontSize: "$body_2",
   },
+
+  '@xs': {
+    width: '340px',
+  },
+
+  "@xxs": {
+    width: "290px",
+  },
+
+  "@nano": {
+    width: "235px",
+  },
 });
 
 export const Experiences = styled("div", {
@@ -27,6 +39,16 @@ export const Experiences = styled("div", {
   justifyContent: "space-between",
   "> img": {
     width: "150px",
+  },
+
+  "@xxs": {
+    "> img": {
+      width: "115px",
+    },
+  },
+
+  "@nano": {
+    flexDirection: "column",
   },
 });
 

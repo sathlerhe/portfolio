@@ -8,27 +8,10 @@ export const Container = styled("header", {
   zIndex: 3,
 });
 
-export const Flex = styled("header", {
+export const Flex = styled("div", {
   display: "flex",
   alignItems: "center",
   justifyContent: "space-between",
-});
-
-export const Title = styled("h4", {
-  display: "flex",
-  alignItems: "center",
-  justifyContent: "center",
-
-  color: "$text_white",
-  fontSize: "$header_6",
-  fontWeight: "$header_5",
-
-  "> i": {
-    color: "$primary",
-    fontStyle: "normal",
-    margin: "5px",
-    fontSize: "$header_4",
-  },
 });
 
 export const Menu = styled("nav", {
