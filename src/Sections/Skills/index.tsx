@@ -66,8 +66,12 @@ const Skills: React.FC = () => {
               {skills?.map((skill) => (
                 <SkillBox
                   key={skill?.id}
-                  onMouseEnter={() => handleToggleSkillName(skill?.id)}
-                  onMouseLeave={() => handleToggleSkillName(skill?.id)}
+                  onMouseEnter={() =>
+                    handleToggleSkillName(skill?.id as unknown as ISkillsObj)
+                  }
+                  onMouseLeave={() =>
+                    handleToggleSkillName(skill?.id as unknown as ISkillsObj)
+                  }
                 >
                   <img src={skill?.src} alt={skill?.name} />
                   <p id={`skillId${skill?.id}`} className="hidden">
