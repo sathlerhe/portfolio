@@ -31,7 +31,7 @@ const Projects: React.FC = () => {
       img: "/assets/lp_img.png",
       description: "Landing page coded using a figma design as base",
       gitLink: "https://github.com/sathlerhe/landingpage",
-      demoLink: "https://github.com/sathlerhe/landingpage",
+      demoLink: undefined,
     },
   ];
 
