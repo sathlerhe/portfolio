@@ -22,7 +22,7 @@ const Contact: React.FC = () => {
     },
     {
       name: "Whatsapp",
-      link: "https://api.whatsapp.com/send/?phone=55997742004",
+      link: "https://api.whatsapp.com/send/?phone=5527997742004",
       icon: "/assets/whatsapp.png",
     },
     {
