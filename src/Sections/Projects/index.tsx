@@ -33,6 +33,13 @@ const Projects: React.FC = () => {
       gitLink: "https://github.com/sathlerhe/landingpage",
       demoLink: undefined,
     },
+    {
+      name: "Cat Generator",
+      img: "/assets/cg_img.png",
+      description: "A cat image generator to make you happy",
+      gitLink: "https://github.com/sathlerhe/cat-generator",
+      demoLink: "https://cat-generator-seven.vercel.app",
+    },
   ];
 
   return (
