@@ -60,8 +60,14 @@ const Projects: React.FC = () => {
                     <p>{project?.description}</p>
                   </TextBox>
                   <LinksBox>
-                    <a href={project?.gitLink}>Source Code</a>
-                    {project?.demoLink && <a href={project?.demoLink}>Demo</a>}
+                    <a href={project?.gitLink} target="_blank">
+                      Source Code
+                    </a>
+                    {project?.demoLink && (
+                      <a href={project?.demoLink} target="_blank">
+                        Demo
+                      </a>
+                    )}
                   </LinksBox>
                 </ProjectBox>
               ))}
